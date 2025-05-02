@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quicklynx Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f1f1f1;
+      color: #333;
+    }
+    header {
+      background: #111;
+      padding: 3rem;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .portfolio a {
+      display: block;
+      text-decoration: none;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .portfolio a:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .portfolio a h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+    .portfolio a p {
+      font-size: 1rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Quicklynx Portfolio</h1>
+    <p>Curated Collection of Projects</p>
+  </header>
+  <div class="portfolio">
+    <a href="https://miraki-healing.jjdigital.co/services/stress/" target="_blank">
+      <h2>Miraki Healing</h2>
+      <p>Stress Management Service</p>
+    </a>
+    <a href="https://recapturing-dreams.jjdigital.co/" target="_blank">
+      <h2>Recapturing Dreams</h2>
+      <p>Photography & Dream Restoration</p>
+    </a>
+    <a href="https://integritas.jjdigital.co/" target="_blank">
+      <h2>Integritas</h2>
+      <p>Branding and Marketing Solutions</p>
+    </a>
+    <a href="https://love-line-booths.jjdigital.co/" target="_blank">
+      <h2>Love Line Booths</h2>
+      <p>Event Photography Service</p>
+    </a>
+    <a href="https://extreme-shine-mobile-detailing.jjdigital.co/" target="_blank">
+      <h2>Extreme Shine Mobile Detailing</h2>
+      <p>Car Detailing Service</p>
+    </a>
+    <a href="https://pousadasuites.com/" target="_blank">
+      <h2>Pousada Suites</h2>
+      <p>Luxury Stays</p>
+    </a>
+    <a href="https://aubergetible-mont.jjdigital.co/" target="_blank">
+      <h2>Auberge Tible Mont</h2>
+      <p>Mountain Resort Booking</p>
+    </a>
+    <a href="https://art-by-runhild.jjdigital.co/shop/" target="_blank">
+      <h2>Art by Runhild</h2>
+      <p>Shop Art Collections</p>
+    </a>
+    <a href="https://altostratus-technologies.jjdigital.co/courses/amazon-web-service/" target="_blank">
+      <h2>Altostratus Technologies</h2>
+      <p>AWS Course Offering</p>
+    </a>
+    <a href="https://sotos-interior-design.jjdigital.co/outdoor-and-yacht/" target="_blank">
+      <h2>Sotos Interior Design</h2>
+      <p>Outdoor & Yacht Designs</p>
+    </a>
+  </div>
+  <footer style="text-align:center; padding: 2rem; background-color: #111; color: white;">
+    <p>For inquiries, email us at <a href="mailto:info@quiklynx.io" style="color: #f1f1f1;">info@quiklynx.io</a></p>
+  </footer>
+</body>
+</html>
