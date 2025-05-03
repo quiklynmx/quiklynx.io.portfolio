@@ -1,91 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quicklynx Portfolio</title>
-    <!-- Linking the CSS file -->
-    <link rel="stylesheet" href="quicklynx.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="quicklynx.css" />
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quicklynx | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
-    <!-- Header Section -->
-    <header id="home">
-        <div class="hero-container">
-            <h1>Hi, I'm Quicklynx</h1>
-            <p>I'm a Web Developer & Designer</p>
-            <a href="#contact" class="btn">Hire Me</a>
-        </div>
-    </header>
+  <header>
+    <div class="container">
+      <h1>Hi, I'm Quicklynx</h1>
+      <p>I'm a Web Developer & Designer</p>
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
+  </header>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I’m a passionate developer with expertise in web and mobile development. I specialize in creating
-                beautiful, responsive websites that provide seamless user experiences.</p>
-        </div>
-    </section>
+  <section class="about container">
+    <h2>About Me</h2>
+    <p>I'm a passionate developer with expertise in web and mobile development. I specialize in creating beautiful, responsive websites that provide seamless user experiences.</p>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2>My Skills</h2>
-            <ul class="skills-list">
-                <li>HTML - 95%</li>
-                <li>CSS - 90%</li>
-                <li>JavaScript - 85%</li>
-                <li>React - 80%</li>
-                <li>WordPress - 90%</li>
-            </ul>
-        </div>
-    </section>
+  <section class="skills container">
+    <h2>My Skills</h2>
+    <ul>
+      <li><strong>HTML</strong> – 95%</li>
+      <li><strong>CSS</strong> – 90%</li>
+      <li><strong>JavaScript</strong> – 85%</li>
+      <li><strong>React</strong> – 80%</li>
+      <li><strong>WordPress</strong> – 90%</li>
+    </ul>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project">
-                    <h3>Portfolio Website</h3>
-                    <p>A personal portfolio to showcase my work and skills.</p>
-                </div>
-                <div class="project">
-                    <h3>E-commerce Website</h3>
-                    <p>Full-featured e-commerce site using React & Firebase.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="projects container">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio to showcase my work and skills.</p>
+    </div>
+    <div class="project">
+      <h3>E-commerce Website</h3>
+      <p>Full-featured e-commerce site using React & Firebase.</p>
+    </div>
+  </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <div class="container">
-            <h2>Client Testimonials</h2>
-            <p>“Quicklynx's work is amazing! Very professional and fast.” - Client Name</p>
-        </div>
-    </section>
+  <section class="testimonials container">
+    <h2>Client Testimonials</h2>
+    <blockquote>“Quicklynx's work is amazing! Very professional and fast.” – Client Name</blockquote>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Your Name" required />
-                <input type="email" name="email" placeholder="Your Email" required />
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </section>
+  <section class="contact container" id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Quicklynx. All Rights Reserved.</p>
-    </footer>
+  <footer>
+    <p>© 2025 Quicklynx. All Rights Reserved.</p>
+  </footer>
 </body>
-
 </html>
