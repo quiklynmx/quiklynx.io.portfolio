@@ -2,102 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiklynx</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #fdfdfd;
-      color: #222;
-    }
-    header {
-      background-color: #0d1117;
-      color: white;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header h1 {
-      font-size: 24px;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-    section {
-      padding: 60px 40px;
-    }
-    .hero {
-      background: #e0e7ff;
-      padding: 100px 40px;
-      text-align: center;
-    }
-    .hero h2 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 20px;
-      color: #444;
-    }
-    .section-title {
-      font-size: 32px;
-      margin-bottom: 20px;
-      border-bottom: 2px solid #ddd;
-      display: inline-block;
-    }
-    footer {
-      background: #0d1117;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiklynx Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Quiklynx</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
   <section class="hero">
-    <h2>Welcome to Quiklynx</h2>
-    <p>Your digital solutions partner</p>
+    <h1>Hi, I'm <span>Quiklynx</span></h1>
+    <p>I'm a Web Developer & Designer</p>
+    <a href="#contact" class="btn">Hire Me</a>
   </section>
 
-  <section id="about">
-    <h3 class="section-title">About Us</h3>
-    <p>We are a creative team building modern and powerful websites, apps, and digital experiences.</p>
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate developer with expertise in web and mobile development. I specialize in creating beautiful, responsive websites that provide seamless user experiences.</p>
   </section>
 
-  <section id="services">
-    <h3 class="section-title">Services</h3>
+  <section class="skills">
+    <h2>My Skills</h2>
     <ul>
-      <li>Web Development</li>
-      <li>UI/UX Design</li>
-      <li>Digital Marketing</li>
+      <li><strong>HTML</strong> – 95%</li>
+      <li><strong>CSS</strong> – 90%</li>
+      <li><strong>JavaScript</strong> – 85%</li>
+      <li><strong>React</strong> – 80%</li>
+      <li><strong>WordPress</strong> – 90%</li>
     </ul>
   </section>
 
-  <section id="projects">
-    <h3 class="section-title">Projects</h3>
-    <p>Some of our highlighted projects will go here.</p>
+  <section class="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio to showcase my work and skills.</p>
+    </div>
+    <div class="project">
+      <h3>E-commerce Website</h3>
+      <p>Full-featured e-commerce site using React & Firebase.</p>
+    </div>
   </section>
 
-  <section id="contact">
-    <h3 class="section-title">Contact</h3>
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
     <p>Email: contact@quiklynx.com</p>
     <p>Phone: +123 456 7890</p>
   </section>
