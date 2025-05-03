@@ -5,198 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiklynx | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #f4f4f4;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #1e1e2f;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    header h1 {
-      margin-bottom: 10px;
-    }
-
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      gap: 30px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .hero {
-      background: linear-gradient(to right, #1e1e2f, #2c3e50);
-      color: white;
-      text-align: center;
-      padding: 80px 20px;
-    }
-
-    .hero h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    .btn {
-      background: #fca311;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 20px;
-      font-weight: bold;
-      transition: 0.3s ease;
-    }
-
-    .btn:hover {
-      background: #fb8c00;
-    }
-
-    section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .cards {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      width: 300px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    footer {
-      background: #1e1e2f;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Quiklynx</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header id="home">
+    <div class="container">
+      <h1>Quiklynx Portfolio</h1>
+      <p>Your Reliable Digital Solutions Partner</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>We Build Smart Digital Solutions</h2>
-      <p>Helping brands grow through ads, web design, and automation.</p>
-      <a href="#contact" class="btn">Let's Work</a>
-    </div>
-  </section>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
+  <!-- About Section -->
   <section id="about">
     <div class="container">
-      <h2>About Quiklynx</h2>
-      <p>We're a team of creative problem-solvers helping businesses grow through digital transformation. From Meta Ads to full-stack web development, Quiklynx delivers results with edge.</p>
+      <h2>About Us</h2>
+      <p>We are a team of passionate professionals dedicated to providing top-notch digital solutions.</p>
     </div>
   </section>
 
+  <!-- Services Section -->
   <section id="services">
     <div class="container">
-      <h2>Services</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Meta Ads</h3>
-          <p>Ad campaigns that convert, scale, and dominate the market.</p>
-        </div>
-        <div class="card">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="service-card">
           <h3>Web Development</h3>
-          <p>Beautiful, fast, mobile-first websites for your business.</p>
+          <p>Responsive and modern websites tailored to your needs.</p>
         </div>
-        <div class="card">
-          <h3>Automation</h3>
-          <p>Automate orders, leads, and follow-ups with smart tools.</p>
+        <div class="service-card">
+          <h3>App Development</h3>
+          <p>Custom mobile apps that offer seamless user experience.</p>
+        </div>
+        <div class="service-card">
+          <h3>SEO Optimization</h3>
+          <p>Rank higher on search engines and grow your business.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="projects">
+  <!-- Portfolio Section -->
+  <section id="portfolio">
     <div class="container">
-      <h2>Projects</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Fashion Store</h3>
-          <p>Custom Shopify store with Meta ad integration</p>
+      <h2>Our Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <img src="project1.jpg" alt="Project 1">
+          <h3>Project 1</h3>
+          <p>Short description about project 1.</p>
         </div>
-        <div class="card">
-          <h3>Order Bot</h3>
-          <p>Automated fake order detection & confirmation tool</p>
+        <div class="project-card">
+          <img src="project2.jpg" alt="Project 2">
+          <h3>Project 2</h3>
+          <p>Short description about project 2.</p>
+        </div>
+        <div class="project-card">
+          <img src="project3.jpg" alt="Project 3">
+          <h3>Project 3</h3>
+          <p>Short description about project 3.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact">
     <div class="container">
       <h2>Contact Us</h2>
-      <p>Email us: <a href="mailto:hello@quiklynx.com">hello@quiklynx.com</a></p>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Quiklynx. Built with ❤️ by the team.</p>
+    <p>&copy; 2025 Quiklynx. All rights reserved.</p>
+    <p>Contact us at <a href="mailto:info@quiklynx.io">info@quiklynx.io</a></p>
   </footer>
 
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
