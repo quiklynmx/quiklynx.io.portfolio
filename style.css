@@ -1,133 +1,168 @@
-/* General Styles */
+/* Resetting Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
 body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Header / Hero Section */
+/* Header Section */
 #home {
-  background: url('https://via.placeholder.com/1600x900') no-repeat center center/cover;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
+    background: url('https://via.placeholder.com/1600x900') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
 }
 
-.hero-container h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
 .hero-container p {
-  font-size: 1.5em;
-  margin-bottom: 20px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 .hero-container .btn {
-  padding: 10px 30px;
-  background-color: #ff6347;
-  color: white;
-  font-size: 1.2em;
-  text-decoration: none;
-  border-radius: 5px;
+    padding: 10px 30px;
+    background-color: #ff6347;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 /* About Section */
 #about {
-  background-color: white;
-  padding: 50px 20px;
-  text-align: center;
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
 }
 
 #about .container {
-  max-width: 800px;
-  margin: 0 auto;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Skills Section */
 #skills {
-  background-color: #f4f4f4;
-  padding: 50px 20px;
+    background-color: #f4f4f4;
+    padding: 50px 20px;
 }
 
 #skills ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 #skills li {
-  font-size: 1.2em;
-  margin: 10px 0;
+    font-size: 1.2em;
+    margin: 10px 0;
 }
 
 /* Projects Section */
 #projects {
-  padding: 50px 20px;
-  background-color: white;
+    padding: 50px 20px;
+    background-color: white;
 }
 
 .project-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
 
 .project {
-  background-color: #f4f4f4;
-  padding: 20px;
-  border-radius: 5px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .project h3 {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 /* Testimonials Section */
 #testimonials {
-  background-color: #f4f4f4;
-  padding: 50px 20px;
-  text-align: center;
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
 }
 
 #testimonials p {
-  font-size: 1.2em;
-  font-style: italic;
+    font-size: 1.2em;
+    font-style: italic;
 }
 
 /* Contact Section */
 #contact {
-  background-color: white;
-  padding: 50px 20px;
+    background-color: white;
+    padding: 50px 20px;
 }
 
 #contact form {
-  max-width: 600px;
-  margin: 0 auto;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-#contact input, #contact textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 #contact button {
-  padding: 10px 30px;
-  background-color: #ff6347;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    padding: 10px 30px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
+/* Footer */
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-background: url('path-to-your-image.jpg') no-repeat center center/cover;
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-container h1 {
+        font-size: 2em;
+    }
+
+    .hero-container p {
+        font-size: 1.2em;
+    }
+
+    #home {
+        padding: 50px 20px;
+    }
+
+    #contact input,
+    #contact textarea {
+        width: 100%;
+    }
+
+    #contact button {
+        width: 100%;
+    }
+}
