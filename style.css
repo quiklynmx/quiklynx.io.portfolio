@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Header / Hero Section */
+#home {
+  background: url('https://via.placeholder.com/1600x900') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-container h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero-container p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.hero-container .btn {
+  padding: 10px 30px;
+  background-color: #ff6347;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* About Section */
+#about {
+  background-color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#about .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Skills Section */
+#skills {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+#skills li {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+/* Projects Section */
+#projects {
+  padding: 50px 20px;
+  background-color: white;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.project {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.project h3 {
+  font-size: 1.5em;
+}
+
+/* Testimonials Section */
+#testimonials {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#testimonials p {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+/* Contact Section */
+#contact {
+  background-color: white;
+  padding: 50px 20px;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact input, #contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#contact button {
+  padding: 10px 30px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
