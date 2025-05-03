@@ -2,64 +2,174 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quicklynx | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #222;
+    }
+
+    header p {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      background: #ff5e3a;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      display: inline-block;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 1.8rem;
+      color: #111;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 10px 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    .project {
+      margin-top: 20px;
+    }
+
+    blockquote {
+      margin: 20px 0;
+      padding: 10px 20px;
+      background: #f1f1f1;
+      border-left: 4px solid #ff5e3a;
+      font-style: italic;
+    }
+
+    form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 1rem;
+      background: #ff5e3a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <div class="container">
-      <h1>Hi, I'm Quicklynx</h1>
-      <p>I'm a Web Developer & Designer</p>
-      <a href="#contact" class="btn">Hire Me</a>
-    </div>
+    <h1>Hi, I'm Quicklynx</h1>
+    <p>I'm a Web Developer & Designer</p>
+    <a href="#contact" class="btn">Hire Me</a>
   </header>
 
-  <section class="about container">
-    <h2>About Me</h2>
-    <p>I'm a passionate developer with expertise in web and mobile development. I specialize in creating beautiful, responsive websites that provide seamless user experiences.</p>
-  </section>
+  <div class="container">
+    <section>
+      <h2>About Me</h2>
+      <p>I’m a passionate developer with expertise in web and mobile development. I specialize in creating beautiful, responsive websites that provide seamless user experiences.</p>
+    </section>
 
-  <section class="skills container">
-    <h2>My Skills</h2>
-    <ul>
-      <li><strong>HTML</strong> – 95%</li>
-      <li><strong>CSS</strong> – 90%</li>
-      <li><strong>JavaScript</strong> – 85%</li>
-      <li><strong>React</strong> – 80%</li>
-      <li><strong>WordPress</strong> – 90%</li>
-    </ul>
-  </section>
+    <section>
+      <h2>My Skills</h2>
+      <ul>
+        <li><strong>HTML</strong> – 95%</li>
+        <li><strong>CSS</strong> – 90%</li>
+        <li><strong>JavaScript</strong> – 85%</li>
+        <li><strong>React</strong> – 80%</li>
+        <li><strong>WordPress</strong> – 90%</li>
+      </ul>
+    </section>
 
-  <section class="projects container">
-    <h2>My Projects</h2>
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>A personal portfolio to showcase my work and skills.</p>
-    </div>
-    <div class="project">
-      <h3>E-commerce Website</h3>
-      <p>Full-featured e-commerce site using React & Firebase.</p>
-    </div>
-  </section>
+    <section>
+      <h2>My Projects</h2>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio to showcase my work and skills.</p>
+      </div>
+      <div class="project">
+        <h3>E-commerce Website</h3>
+        <p>Full-featured e-commerce site using React & Firebase.</p>
+      </div>
+    </section>
 
-  <section class="testimonials container">
-    <h2>Client Testimonials</h2>
-    <blockquote>“Quicklynx's work is amazing! Very professional and fast.” – Client Name</blockquote>
-  </section>
+    <section>
+      <h2>Client Testimonials</h2>
+      <blockquote>“Quicklynx's work is amazing! Very professional and fast.” – Client Name</blockquote>
+    </section>
 
-  <section class="contact container" id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required/>
-      <input type="email" placeholder="Your Email" required/>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </div>
 
   <footer>
     <p>© 2025 Quicklynx. All Rights Reserved.</p>
   </footer>
+
 </body>
 </html>
