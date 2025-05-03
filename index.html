@@ -1,54 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quiklynx Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiklynx Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <section class="hero">
-    <h1>Hi, I'm <span>Quiklynx</span></h1>
-    <p>I'm a Web Developer & Designer</p>
-    <a href="#contact" class="btn">Hire Me</a>
-  </section>
+    <header>
+        <div class="container">
+            <h1>Quiklynx Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>I'm a passionate developer with expertise in web and mobile development. I specialize in creating beautiful, responsive websites that provide seamless user experiences.</p>
-  </section>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hey! I’m Artem, the founder of Quiklynx. I specialize in providing innovative digital solutions that help businesses grow. With a passion for technology, I’m constantly exploring new ways to deliver results.</p>
+        </div>
+    </section>
 
-  <section class="skills">
-    <h2>My Skills</h2>
-    <ul>
-      <li><strong>HTML</strong> – 95%</li>
-      <li><strong>CSS</strong> – 90%</li>
-      <li><strong>JavaScript</strong> – 85%</li>
-      <li><strong>React</strong> – 80%</li>
-      <li><strong>WordPress</strong> – 90%</li>
-    </ul>
-  </section>
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <!-- Example Project -->
+                <div class="project-item">
+                    <h3>Project 1</h3>
+                    <p>Details of Project 1</p>
+                </div>
+                <div class="project-item">
+                    <h3>Project 2</h3>
+                    <p>Details of Project 2</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="projects">
-    <h2>My Projects</h2>
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>A personal portfolio to showcase my work and skills.</p>
-    </div>
-    <div class="project">
-      <h3>E-commerce Website</h3>
-      <p>Full-featured e-commerce site using React & Firebase.</p>
-    </div>
-  </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-  <section class="contact" id="contact">
-    <h2>Contact</h2>
-    <p>Email: contact@quiklynx.com</p>
-    <p>Phone: +123 456 7890</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Quiklynx. All rights reserved.</p>
-  </footer>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Quiklynx. <a href="https://github.com/yourgithub">GitHub</a> | <a href="https://www.linkedin.com/in/yourlinkedin">LinkedIn</a></p>
+        </div>
+    </footer>
 </body>
 </html>
