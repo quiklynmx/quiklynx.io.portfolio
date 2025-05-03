@@ -14,3 +14,4 @@ document.querySelector('.btn').addEventListener('click', function() {
     behavior: 'smooth'
   });
 });
+ 
