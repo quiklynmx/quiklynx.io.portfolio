@@ -129,3 +129,5 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+background: url('path-to-your-image.jpg') no-repeat center center/cover;
