@@ -1,168 +1,97 @@
-/* Resetting Default Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Body Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
-/* Header Section */
-#home {
-    background: url('https://via.placeholder.com/1600x900') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
 }
 
-#home h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
 }
 
-.hero-container p {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+header .btn {
+  margin-top: 20px;
+  display: inline-block;
+  background-color: #ff6600;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
 }
 
-.hero-container .btn {
-    padding: 10px 30px;
-    background-color: #ff6347;
-    color: white;
-    font-size: 1.2em;
-    text-decoration: none;
-    border-radius: 5px;
+h1, h2, h3 {
+  margin-bottom: 10px;
 }
 
-/* About Section */
-#about {
-    background-color: white;
-    padding: 50px 20px;
-    text-align: center;
+section {
+  padding: 40px 20px;
+  background-color: #fff;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-#about .container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Skills Section */
-#skills {
-    background-color: #f4f4f4;
-    padding: 50px 20px;
-}
-
-#skills ul {
-    list-style: none;
-    padding: 0;
-}
-
-#skills li {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-/* Projects Section */
-#projects {
-    padding: 50px 20px;
-    background-color: white;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+ul {
+  list-style-type: square;
+  padding-left: 20px;
 }
 
 .project {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 5px;
+  margin-bottom: 20px;
 }
 
-.project h3 {
-    font-size: 1.5em;
+blockquote {
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #ff6600;
+  padding-left: 15px;
 }
 
-/* Testimonials Section */
-#testimonials {
-    background-color: #f4f4f4;
-    padding: 50px 20px;
-    text-align: center;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
 }
 
-#testimonials p {
-    font-size: 1.2em;
-    font-style: italic;
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-/* Contact Section */
-#contact {
-    background-color: white;
-    padding: 50px 20px;
+button {
+  padding: 10px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-#contact form {
-    max-width: 600px;
-    margin: 0 auto;
+button:hover {
+  background-color: #ff6600;
 }
 
-#contact input,
-#contact textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-#contact button {
-    padding: 10px 30px;
-    background-color: #ff6347;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Footer */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-container h1 {
-        font-size: 2em;
-    }
-
-    .hero-container p {
-        font-size: 1.2em;
-    }
-
-    #home {
-        padding: 50px 20px;
-    }
-
-    #contact input,
-    #contact textarea {
-        width: 100%;
-    }
-
-    #contact button {
-        width: 100%;
-    }
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
 }
