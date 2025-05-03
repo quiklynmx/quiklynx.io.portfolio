@@ -14,7 +14,6 @@ body {
 .container {
   width: 80%;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 header {
@@ -22,6 +21,7 @@ header {
   color: #fff;
   padding: 100px 0;
   text-align: center;
+  position: relative;
 }
 
 header h1 {
@@ -30,7 +30,8 @@ header h1 {
 }
 
 header p {
-  font-size: 1.2em;
+  font-size: 1.5em;
+  margin-bottom: 20px;
 }
 
 header .btn {
@@ -40,8 +41,6 @@ header .btn {
   text-decoration: none;
   font-size: 1.2em;
   border-radius: 5px;
-  margin-top: 20px;
-  display: inline-block;
 }
 
 header .btn:hover {
@@ -77,11 +76,13 @@ section {
 section h2 {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 2em;
 }
 
 .service-cards {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .service-card {
@@ -90,7 +91,7 @@ section h2 {
   width: 30%;
   padding: 20px;
   border-radius: 10px;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .service-card:hover {
@@ -100,6 +101,7 @@ section h2 {
 .projects {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .project-card {
@@ -109,6 +111,7 @@ section h2 {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  transition: transform 0.3s ease;
 }
 
 .project-card img {
